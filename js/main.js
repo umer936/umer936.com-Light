@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$('ul.tabs').tabs();
+});
+$(document).ready(function(){               
+	$('.materialboxed').materialbox();
+});
+$(document).ready(function(){
+	$('.materialboxed').materialbox();
+});
+$(document).ready(function(){               
+	$('.collapsible').collapsible();
+});
