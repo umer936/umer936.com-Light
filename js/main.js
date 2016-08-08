@@ -19,21 +19,33 @@ $(document).on('click', '#contactbutton', function() {
 $(document).on('click', '#themeswitcher', function() {
     $('.material-icons').toggleClass('md-dark').toggleClass('md-light');
     $('body').toggleClass('color2').toggleClass('color1');
+    $('textarea').toggleClass('dark');
     $('.intro').toggleClass('blue').toggleClass('blue-grey');
     if ($('body').hasClass('color1')) {
         $('h5').css('color', 'rgba(0,0,0,0.87)');
         $('h6').css('color', 'rgba(0,0,0,0.87)');
+        $('textarea').css('color', 'rgba(0,0,0,0.87)');
+        $('.container').css('color', 'rgba(0,0,0,0.87)');
+        $('#wordsforcoloring').text('Too bright for your eyes?');
+        $('#colorword').text('dark');
     } else {
         $('h5').css('color', '#9e9e9e');
         $('h6').css('color', '#9e9e9e');
+        $('textarea').css('color', '#9e9e9e');
+        $('.container').css('color', '#9e9e9e');
+        $('#wordsforcoloring').text('Nah, change it back');
+        $('#colorword').text('light');
     }
 });
+
+var height = $('#header').outerHeight();
 var sticky = document.querySelector('.sticky');
 var origOffsetY = sticky.offsetTop;
 function onScroll(e) {
-    window.scrollY >= origOffsetY ? sticky.classList.add('fixed') : sticky.classList.remove('fixed');
+    window.scrollY >= origOffsetY ? (sticky.classList.add('fixed'), $('body').css('padding-top', height)) : sticky.classList.remove('fixed');
 }
 document.addEventListener('scroll', onScroll);
+
 var email = document.querySelector('.email')
   , auto = document.querySelector('.autosuffix')
   , popularEmails = ['gmail.com', 'googlemail.com', 'hotmail.com', 'yahoo.com', 'msn.com', 'aol.com']

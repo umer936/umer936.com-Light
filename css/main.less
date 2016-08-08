@@ -28,12 +28,13 @@ html
 }#header
 {
     z-index: 9999;
+    padding: 0 !important;
 }.color1
 {
     background-color: #ededed !important;
 }.color2 
 {
-    background-color: black !important;
+    background-color: #303030 !important;
     color: #ededed !important;
 }
 .intro
@@ -157,6 +158,15 @@ html
 }.autosuffix li:hover
 {
     background: #cccccc;
+}
+
+.dark::-webkit-input-placeholder {
+   color: rgba(158, 158, 158, 1);
+}
+
+.fixed {
+   position: fixed;
+   top: 0;
 }
 
 /* Rules for sizing the icon. */
