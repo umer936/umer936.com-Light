@@ -21,12 +21,27 @@
 }body,
 html
 {
-    background-color: #ededed!important;
-}.intro
+    overflow-y: scroll;
+}html
+{
+	width: 101% - 0.6em;
+}#header
+{
+    z-index: 9999;
+}.color1
+{
+    background-color: #ededed !important;
+}.color2 
+{
+    background-color: black !important;
+    color: #ededed !important;
+}
+.intro
 {
     margin-bottom: 50px;
-    padding-top: 13%;
-    padding-bottom: 13%;
+    padding-top: 6%;
+    // padding-bottom: 13%;
+    padding: 8%;
 }.intro h1
 {
     font-weight: 900;
@@ -78,8 +93,7 @@ html
 {
     display: inline-block;
     float: left;
-
-    width: 33%;
+    width: 25%;
 }.contact .col
 {
     margin-bottom: 24px;
@@ -105,8 +119,55 @@ html
     text-align: left;
 }.contact .contact-holder p
 {
-    margin-bottom: 30px;
+    margin-bottom: 3.5em;
+    margin-top: 1em;
 }footer
 {
     padding-top: 0;
+}::-webkit-scrollbar
+{
+    width: .6em;
+}::-webkit-scrollbar-thumb:vertical
+{
+    background-color: gray;
+    border: 1px solid #eee;
+}.intro hr
+{
+    margin: 3%;
+}.autosuffix
+{
+    margin-left: 20%;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 999;
+}.autosuffix li
+{
+    padding: 14px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #1a1a1a;
+}.autosuffix li:first-of-type
+{
+    border-radius: 3px 3px 0 0;
+}.autosuffix li:last-of-type
+{
+    border-radius: 0 0 3px 3px;
+}.autosuffix li:hover
+{
+    background: #cccccc;
 }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(158, 158, 158, 1); }
+.material-icons.md-light.md-inactive { color: rgba(158, 158, 158, 0.3); }
