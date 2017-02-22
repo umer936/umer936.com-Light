@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <?
+if(isset($_POST['action'])){
+    $to = "umer936@gmail.com"; 
+    $from = $_POST['email']; 
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    // $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " : " . $_POST['email'] . " wrote the following:" . "\n\n" . $_POST['message'];
+    // $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    // $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "<script>alert('Message Sent. Thank you " . $first_name . "');</script>";
+    $_POST = array();
+    }
+?>
+<?
 /*
 Materialize Colors List
 	materialize-red
@@ -150,26 +169,26 @@ Materialize Colors List
 		  <div class="row">
 		    <div class="col s12 m6 l6">
 		      <div class="row">
-		        <form class="col s12">
+		        <form method="POST" id="contact" class="col s12">
 		          <div class="row">
 		            <div class="input-field col s6">
-		              <input id="first_name" type="text" class="validate">
+		              <input id="first_name" name="first_name" type="text" class="validate">
 		              <label for="first_name">First Name</label>
 		            </div>
 		            <div class="input-field col s6">
-		              <input id="last_name" type="text" class="validate">
+		              <input id="last_name" name="last_name" type="text" class="validate">
 		              <label for="last_name">Last Name</label>
 		            </div>
 		          </div>
 		          <div class="row">
 		            <div class="input-field col s12">
-		              <input id="email" type="email" class="validate email">
+		              <input id="email" name="email" type="email" class="validate email">
 		              <label for="email">E-Mail</label>
 		              <ul class="autosuffix"></ul>
 		            </div>
 		          </div>
-		          <textarea class="materialize-textarea" placeholder="Your Message" required></textarea>
-		          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+		          <textarea class="materialize-textarea" name="message" placeholder="Your Message" required></textarea>
+		          <button class="btn waves-effect waves-light" type="submit" value="submit" name="action">Submit
 		            <i class="md-dark material-icons right">send</i>
 		          </button>
 		        </form>
@@ -197,8 +216,7 @@ Materialize Colors List
 	</footer>
 
   	<!--Import jQuery before materialize.js-->
-	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
