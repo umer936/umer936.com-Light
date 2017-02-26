@@ -75,16 +75,16 @@ Materialize Colors List
 
 	<div class="row">
     <div id="header" class="col s12 sticky z-depth-2">
-      <ul class="tabs">
-        <li class="tab col s3"><a class="active" href="#home">Home</a></li>
-        <li class="tab col s3"><a href="#about">About</a></li>
-        <li class="tab col s3"><a href="#work">Work</a></li>
-        <li class="tab col s3"><a href="#contact">Contact</a></li>
+      <ul class="header table-of-contents">
+        <li class="headericon col s3"><a href="#home">Home</a></li>
+        <li class="headericon col s3"><a href="#about">About</a></li>
+        <li class="headericon col s3"><a href="#work">Work</a></li>
+        <li class="headericon col s3"><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 
-    <div id="home" class="col s12">
+    <div id="home" class="col s12 scrollspy">
 		<div class="intro blue lighten-2 z-depth-1">
 		  <h1 class="grey-text text-lighten-5">Umer Salman</h1>
 		  <h2 class="grey-text text-lighten-5">umer936</h2>
@@ -97,7 +97,7 @@ Materialize Colors List
 		  <a class="waves-effect waves-light black btn" id="themeswitcher">Make it <span id="colorword">dark</span></a>
 		</div>
     </div>
-    <div id="about" class="col s12">
+    <div id="about" class="col s12 scrollspy">
     	<div class="container about">
 		  <h5>about me</h5>
 		  <hr>
@@ -111,7 +111,7 @@ Materialize Colors List
 		      <div class="card blue-grey darken-1">
 		        <div class="card-content white-text">
 		          <img src="http://umer936.com/images/logoh.png" width="64" height="64">
-		          <p>You can find me at all of the following, in order of time spent</p>
+		          <p>You can find me @</p>
 		        </div>
 		        <div class="card-action">
 		          <a href="https://google.com/+UmerSalman">Google+</a>
@@ -143,7 +143,7 @@ Materialize Colors List
 		  </div>
 		</div>
     </div>
-    <div id="work" class="col s12">
+    <div id="work" class="col s12 scrollspy">
 		<div class="container portfolio">
 		  <h5>portfolio</h5>
 		  <h6>FINISHED PROJECTS</h6>
@@ -161,7 +161,7 @@ Materialize Colors List
 		  </div>
 		</div>
     </div>
-    <div id="contact" class="col s12">
+    <div id="contact" class="col s12 scrollspy">
 		<div class="container contact">
 		  <h5>contact</h5>
 		  <h6>find me</h6>
@@ -184,7 +184,7 @@ Materialize Colors List
 		            <div class="input-field col s12">
 		              <input id="email" name="email" type="email" class="validate email">
 		              <label for="email">E-Mail</label>
-		              <ul class="autosuffix"></ul>
+		              <div class="input-field"><ul class="autosuffix col s6"></ul></div>
 		            </div>
 		          </div>
 		          <textarea class="materialize-textarea" name="message" placeholder="Your Message" required></textarea>
@@ -210,7 +210,7 @@ Materialize Colors List
 	<footer>
 	  <div class="footer-copyright">
 	    <div class="container">
-	    © 2015 Umer936
+	    © 2015-2017 Umer936
 	    </div>
 	  </div>
 	</footer>
@@ -218,6 +218,6 @@ Materialize Colors List
   	<!--Import jQuery before materialize.js-->
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
 </body>
 </html>

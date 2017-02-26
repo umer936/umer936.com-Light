@@ -1,20 +1,23 @@
 $(document).ready(function() {
-    $('ul.tabs').tabs();
+    $('.scrollspy').scrollSpy('scrollOffset', '300');
     // $('.s12').fadeOut('slow');
     $('.s12').fadeIn('slow');
-});
-$(document).ready(function() {
     $('.materialboxed').materialbox();
-});
-$(document).ready(function() {
-    $('.materialboxed').materialbox();
-});
-$(document).ready(function() {
     $('.collapsible').collapsible();
 });
-$(document).on('click', '#contactbutton', function() {
-    $('li .active').removeClass('active');
-    $('a[href^="#contact"]').addClass('active');
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - $('#header').outerHeight()
+        }, 750);
+        return false;
+      }
+    }
+  });
 });
 $(document).on('click', '#themeswitcher', function() {
     $('.material-icons').toggleClass('md-dark').toggleClass('md-light');
@@ -38,17 +41,16 @@ $(document).on('click', '#themeswitcher', function() {
     }
 });
 
-var height = $('#header').outerHeight();
 var sticky = document.querySelector('.sticky');
-var origOffsetY = sticky.offsetTop;
 function onScroll(e) {
-    window.scrollY >= origOffsetY ? (sticky.classList.add('fixed'), $('body').css('padding-top', height)) : sticky.classList.remove('fixed');
+    scrolling = 1;
+    window.scrollY >= sticky.offsetTop ? (sticky.classList.add('fixed'), $('body').css('padding-top', $('#header').outerHeight())) : sticky.classList.remove('fixed');
 }
 document.addEventListener('scroll', onScroll);
 
 var email = document.querySelector('.email')
   , auto = document.querySelector('.autosuffix')
-  , popularEmails = ['gmail.com', 'googlemail.com', 'hotmail.com', 'yahoo.com', 'msn.com', 'aol.com']
+  , popularEmails = ['gmail.com', 'hotmail.com', 'yahoo.com']
   , itemSelected = 0
   , itemList = [];
 window.addEventListener('keyup', function() {
@@ -82,7 +84,7 @@ window.addEventListener('keyup', function() {
             itemList[i].classList.add('selected');
         }
     }
-    console.log(itemSelected, itemList);
+    // console.log(itemSelected, itemList);
 });
 email.addEventListener('keyup', function() {
     auto.innerHTML = '';
