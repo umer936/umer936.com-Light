@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.scrollspy').scrollSpy('scrollOffset', '300');
     // $('.s12').fadeOut('slow');
     $('.s12').fadeIn('slow');
-    $('.materialboxed').materialbox();
+    // $('.materialboxed').materialbox();
     $('.collapsible').collapsible();
 });
 $(function() {

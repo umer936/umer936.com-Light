@@ -94,24 +94,24 @@ Materialize Colors List
 		  Too bright for your eyes?
 		  </span> 
 		  <br />
-		  <a class="waves-effect waves-light black btn" id="themeswitcher">Make it <span id="colorword">dark</span></a>
+		  <a class="waves-effect waves-light black btn hoverable" id="themeswitcher">Make it <span id="colorword">dark</span></a>
 		</div>
     </div>
     <div id="about" class="col s12 scrollspy">
     	<div class="container about">
 		  <h5>about me</h5>
-		  <hr>
+		  <hr />
 		  <div class="row">
 		    <div class="col s12 m4 l4">
 		      <h6>Me</h6>
-		      <p>Blah blah words words words</p>
+		      <p>I've done quite a few things! Check out my <a href="http://github.com/umer936/My-CV/raw/master/output_pdfs/cv.pdf">résumé</a> and my <a href="http://github.com/umer936">GitHub</a> to see what I've been up to! </p>
 		    </div>
 		    <div class="col s12 m4 l4">
 		      <h6>Profile</h6>
-		      <div class="card blue-grey darken-1">
+		      <div class="card blue-grey darken-1 hoverable">
 		        <div class="card-content white-text">
 		          <img src="http://umer936.com/images/logoh.png" width="64" height="64">
-		          <p>You can find me @</p>
+		          <p>Find me online @</p>
 		        </div>
 		        <div class="card-action">
 		          <a href="https://google.com/+UmerSalman">Google+</a>
@@ -132,11 +132,11 @@ Materialize Colors List
 		      <ul class="collapsible">
 		        <li class="active">
 		          <div class="collapsible-header"><i class="md-dark material-icons">web</i>Designer</div>
-		          <div class="collapsible-body"><p>IDK if I'll put stuff here.</p></div>
+		          <div class="collapsible-body"><p>Well I'm always working on this website. Also check out <a href="http://satxresist.com">SATXResist.com</a></p></div>
 		        </li>
 		        <li>
 		          <div class="collapsible-header"><i class="md-dark material-icons">format_align_justify</i>Developer</div>
-		          <div class="collapsible-body"><p>Or here.</p></div>
+		          <div class="collapsible-body"><p>I should probably put stuff here.</p></div>
 		        </li>
 		      </ul>
 		    </div>
@@ -147,16 +147,124 @@ Materialize Colors List
 		<div class="container portfolio">
 		  <h5>portfolio</h5>
 		  <h6>FINISHED PROJECTS</h6>
-		  <hr>
+		  <hr />
 		  <div class="row">
 		    <div class="col s12 m12 l12 portfolio-holder">
-		      <img class="materialboxed" src="/images/source.png">
-		      <img class="materialboxed" src="/images/Cygwin.jpg">
-		      <img class="materialboxed" src="/images/ingress.jpg">
-		      <img class="materialboxed" src="/images/nlogo.png">
-		      <img class="materialboxed" src="/images/TNTPUClogo.png">
-		      <img class="materialboxed" src="/images/cube1.png">
-		      <img class="materialboxed" src="/images/Compass.png">
+		    	<div class="col s3">
+					<div class="card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://umer936.com/images/source.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4 left-align">Simple Source Viewer<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-action left-align">
+							<a href="http://apps.microsoft.com/windows/en-us/app/simple-source-viewer/6722f6a7-bb5c-46f5-aa1f-92f673e95c6b">Link to webstore</a>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4 left-align">Simple Source Viewer<i class="material-icons right">close</i></span>
+							<p>
+								<ul class="left-align">
+									<li>Lets you see the source code of any public webpage</li>
+									<li>Just type in the URL and hit enter</li>
+									<li>Windows 8, Windows 8.1, and Windows RT</li>
+									<li>Fast, small, simple, and easy</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://umer936.com/images/Cygwin.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4 left-align">Cygwin Here<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-action left-align">
+							<a href="https://github.com/umer936/CygwinHere">Link to GitHub</a>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4 left-align">Cygwin Here<i class="material-icons right">close</i></span>
+							<p>
+								<ul class="left-align">
+									<li>Small registry edit to allow opening of Cygwin by right clicking, similar to Shift + RtClick &gt; Open Command Window Here</li>
+									<li>Windows XP or later</li>
+									<li>32-bit and 64-bit support</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s3">
+					<div class="card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://umer936.com/images/nlogo.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4 left-align">SATXResist Website<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-action left-align">
+							<a href="http://satxresist.com/">Link to website</a>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4 left-align">SATXResist Website<i class="material-icons right">close</i></span>
+							<p>
+								<ul class="left-align">
+									<li>Ingress tips and tricks</li>
+									<li>Community roster</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s3">
+					<div class="card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://umer936.com/images/TNTPUClogo.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4 left-align">Designed logo<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-action left-align">
+							<a href="http://totsnteenspediatric.com/">Link to website</a>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4 left-align">Designed logo<i class="material-icons right">close</i></span>
+							<p>
+								<ul class="left-align">
+									<li>Designed logo for Tots N Teens Pediatric Urgent Care (helped by CJ101)</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s3">
+					<div class="card sticky-action">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="http://umer936.com/images/Compass.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4 left-align">Social Network Website<i class="material-icons right">more_vert</i></span>
+						</div>
+						<!-- <div class="card-action left-align">
+							<a href="/compass">Link to website</a>
+						</div> -->
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4 left-align">Social Network Website<i class="material-icons right">close</i></span>
+							<p>
+								<ul class="left-align">
+									<li>Dead social network created by me</li>
+									<li>Currently disconnected from database</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
 		    </div>
 		  </div>
 		</div>
@@ -165,7 +273,7 @@ Materialize Colors List
 		<div class="container contact">
 		  <h5>contact</h5>
 		  <h6>find me</h6>
-		  <hr>
+		  <hr />
 		  <div class="row">
 		    <div class="col s12 m6 l6">
 		      <div class="row">
@@ -187,7 +295,12 @@ Materialize Colors List
 		              <div class="input-field"><ul class="autosuffix col s6"></ul></div>
 		            </div>
 		          </div>
-		          <textarea class="materialize-textarea" name="message" placeholder="Your Message" required></textarea>
+		          <div class="row">
+			        <div class="input-field col s12">
+			          <textarea id="emailmessage" class="materialize-textarea" name="message" required></textarea>
+			          <label for="emailmessage">Your Message</label>
+			        </div>
+			      </div>
 		          <button class="btn waves-effect waves-light" type="submit" value="submit" name="action">Submit
 		            <i class="md-dark material-icons right">send</i>
 		          </button>
