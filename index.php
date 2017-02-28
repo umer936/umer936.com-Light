@@ -57,7 +57,7 @@ Materialize Colors List
 
 	<link rel="stylesheet" href="css/main.less.css">
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:100,300,400,500,700" rel="stylesheet">
 
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
